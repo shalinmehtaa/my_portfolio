@@ -67,7 +67,7 @@
     .menu .nav-item.show {
       transform: translate3d(0, 0, 0); }
     .menu .nav-item.current a {
-      color: #5cd6d6; }
+      color: #5fb3b6; }
   .menu .nav-link {
     display: inline-block;
     position: relative;
@@ -76,7 +76,7 @@
     color: #000;
     transition: all 0.2s ease-out; }
     .menu .nav-link:hover {
-      color: #5cd6d6; }
+      color: #5fb3b6; }
 
 #main-footer {
   text-align: center;
@@ -153,7 +153,7 @@ section h2 {
 
 a {
   text-decoration: none;
-  color: #5cd6d6; }
+  color: #5fb3b6; }
 
 header {
   position: fixed;
@@ -161,7 +161,7 @@ header {
   width: 100%; }
 
 .text-secondary {
-  color: #5cd6d6; }
+  color: #5fb3b6; }
 
 main {
   padding: 4rem;
@@ -234,10 +234,10 @@ main {
     text-align: center; }
     main .lg-heading {
       line-height: 1;
-      background: none; }
+      background: none;
+      color: #000; }
     main .sm-heading {
-      font-size: 20px;
-      background: none; }
+      display: none; }
   ul.menu-nav,
   div.menu-branding {
     float: none;

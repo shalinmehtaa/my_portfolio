@@ -67,7 +67,7 @@
     .menu .nav-item.show {
       transform: translate3d(0, 0, 0); }
     .menu .nav-item.current a {
-      color: #5cd6d6; }
+      color: #5fb3b6; }
   .menu .nav-link {
     display: inline-block;
     position: relative;
@@ -76,7 +76,7 @@
     color: #000;
     transition: all 0.2s ease-out; }
     .menu .nav-link:hover {
-      color: #5cd6d6; }
+      color: #5fb3b6; }
 
 #main-footer {
   text-align: center;
@@ -161,12 +161,8 @@ main {
     main .icons a {
       padding: 0.4rem; }
       main .icons a:hover {
-        color: #5cd6d6;
+        color: #5fb3b6;
         transition: all 0.2s ease-out; }
-  main#home {
-    overflow: hidden; }
-    main#home h1 {
-      margin-top: 20vh; }
 
 .about-info {
   display: grid;
@@ -194,18 +190,6 @@ main {
   .about-info h4 {
     font-weight: 100; }
 
-.projects {
-  display: grid;
-  grid-gap: 0.7rem;
-  grid-template-columns: repeat(3, 1fr); }
-  .projects img {
-    width: 100%;
-    border: 3px #fff solid; }
-    .projects img:hover {
-      opacity: 0.5;
-      border-color: #5cd6d6;
-      transition: all 0.2s ease-out; }
-
 .boxes {
   display: flex;
   flex-wrap: wrap;
@@ -213,14 +197,14 @@ main {
   align-items: center;
   margin-top: 1rem; }
   .boxes div {
-    font-size: 2rem;
+    font-size: 1rem;
     border: 3px #fff solid;
     padding: 1.5rem 2.5rem;
     margin-bottom: 3rem;
+    margin-top: 5rem;
     transition: all 0.2s ease-out; }
     .boxes div:hover {
-      padding: 0.5rem 1.5rem;
-      background: #5cd6d6;
+      background: #5fb3b6;
       color: #000; }
       .boxes div:hover span {
         color: #000; }
@@ -231,7 +215,7 @@ main {
   border: 0;
   margin-bottom: 0.3rem; }
   .btn:hover, .btn-dark:hover, .btn-light:hover {
-    background: #5cd6d6;
+    background: #5fb3b6;
     color: #000; }
 
 .btn-dark {
@@ -263,10 +247,10 @@ main {
     text-align: center; }
     main .lg-heading {
       line-height: 1;
-      background: none; }
+      background: none;
+      color: #000; }
     main .sm-heading {
-      font-size: 20px;
-      background: none; }
+      display: none; }
   ul.menu-nav,
   div.menu-branding {
     float: none;
