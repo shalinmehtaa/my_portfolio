@@ -1,6 +1,5 @@
 @import "config";
 @import "menu";
-@import "mobile";
 
 * {
   box-sizing: border-box;
@@ -9,10 +8,10 @@
 body {
   @include background();
   background: $primary-color;
-  color: #fff;
+  color: set-text-color($primary-color);
   height: 100%;
   margin: 0;
-  font-family: "Helvetica", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "M PLUS Rounded 1c", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5;
 }
 
@@ -23,29 +22,21 @@ main h3 {
   margin: 0;
   font-weight: 100;
   background: rgba(lighten($color: #486470, $amount: 0.1), 0.7);
+  //rgba makes it so that the background won't block the image
   padding-left: 0.5em;
 
   &.lg-heading {
     font-size: 6rem;
     width: 50%;
-    //border-top-left-radius: 25px;
-    //border-top-right-radius: 25px;
   }
 
   &.sm-heading {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     padding: 0.2rem;
-    /* background: rgba(
-      lighten($color: #fff, $amount: 0.1),
-      0.4
-    ); */ //rgba makes it so that the background won't block the image
     width: 50%;
-    margin: 0;
     color: #fff;
     text-align: center;
     padding-bottom: 1em;
-    //border-bottom-left-radius: 25px;
-    //border-bottom-right-radius: 25px;
   }
 }
 
@@ -126,7 +117,11 @@ main {
 
 .section {
   text-align: center;
-  padding: 50px 80px;
+  padding: 30px 80px;
+
+  p {
+    font-size: 20px;
+  }
 }
 
 .section-light {
@@ -146,3 +141,5 @@ main {
     background-attachment: scroll;
   }
 }
+
+@import "mobile";

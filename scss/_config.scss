@@ -27,20 +27,29 @@ $background-opacity: 0.7;
         height: 100%;
         background: rgba($primary-color, $background-opacity);
         z-index: -1;
-      } */
+      } this enables and overlay over the image */
     }
   }
 }
 
-// Media Query Mix-ins
+// Set Text Color
+@function set-text-color($color) {
+  @if (lightness($color) > 40) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}
+
+// Media Queries
 @mixin mediaSm {
-  @media screen and (max-width: 500) {
+  @media screen and (max-width: 500px) {
     @content;
   }
 }
 
 @mixin mediaMd {
-  @media screen and (max-width: 768) {
+  @media screen and (max-width: 768px) {
     @content;
   }
 }
@@ -52,7 +61,7 @@ $background-opacity: 0.7;
 }
 
 @mixin mediaXl {
-  @media screen and (min-width: 1171) {
+  @media screen and (min-width: 1171px) {
     @content;
   }
 }

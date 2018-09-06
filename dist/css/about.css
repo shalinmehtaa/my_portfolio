@@ -101,8 +101,8 @@
   box-sizing: border-box; }
 
 body {
-  background: #444;
-  color: #fff;
+  background: #b6c2ca;
+  color: #333;
   height: 100%;
   margin: 0;
   font-family: "M PLUS Rounded 1c", Tahoma, Geneva, Verdana, sans-serif;
@@ -129,31 +129,21 @@ main h1,
 main h2,
 main h3 {
   margin: 0;
-  font-weight: 100;
-  background: rgba(72, 100, 112, 0.7);
-  padding-left: 0.5em; }
+  font-weight: 100; }
   main h1.lg-heading,
   main h2.lg-heading,
   main h3.lg-heading {
-    font-size: 6rem;
-    width: 50%; }
+    font-size: 6rem; }
   main h1.sm-heading,
   main h2.sm-heading,
   main h3.sm-heading {
-    margin-bottom: 1rem;
-    padding: 0.2rem;
-    width: 50%;
-    color: #fff;
-    text-align: center;
-    padding-bottom: 1em; }
-
-section h2 {
-  padding: 0;
-  font-weight: 100; }
+    margin-bottom: 2rem;
+    padding: 0.2rem 1rem;
+    background: rgba(188, 199, 206, 0.5); }
 
 a {
-  text-decoration: none;
-  color: #5cd6d6; }
+  color: #fff;
+  text-decoration: none; }
 
 header {
   position: fixed;
@@ -161,64 +151,103 @@ header {
   width: 100%; }
 
 .text-secondary {
-  color: #5cd6d6; }
+  color: #fff; }
 
 main {
   padding: 4rem;
-  height: 100%; }
+  min-height: calc(100vh - 60px); }
   main .icons {
     margin-top: 1rem; }
     main .icons a {
       padding: 0.4rem; }
-      main .icons a:first-child:hover {
-        color: #3b5998;
-        transition: all 0.2s ease-out; }
-      main .icons a:nth-child(2):hover {
-        color: #0077b5;
-        transition: all 0.2s ease-out; }
-      main .icons a:nth-child(3):hover {
-        color: #000;
+      main .icons a:hover {
+        color: #5cd6d6;
         transition: all 0.2s ease-out; }
   main#home {
     overflow: hidden; }
     main#home h1 {
       margin-top: 20vh; }
 
-.pimg2,
-.pimg3 {
-  position: relative;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed; }
+.about-info {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas: "bioimage bio bio" "job1 job2 job3";
+  grid-template-columns: repeat(3, 1fr); }
+  .about-info .bio-image {
+    grid-area: bioimage;
+    margin: auto;
+    border-radius: 50%;
+    border: #fff 3px solid; }
+  .about-info .bio {
+    grid-area: bio;
+    font-size: 1.5rem; }
+  .about-info .job-1 {
+    grid-area: job1; }
+  .about-info .job-2 {
+    grid-area: job2; }
+  .about-info .job-3 {
+    grid-area: job3; }
+  .about-info .job {
+    background: #f1f3f5;
+    padding: 0.5rem;
+    border-bottom: #333 5px solid; }
+  .about-info h4 {
+    font-weight: 100; }
 
-.pimg2 {
-  background-image: url("../img/bgimage2.jpeg");
-  min-height: 400px; }
+.projects {
+  display: grid;
+  grid-gap: 0.7rem;
+  grid-template-columns: repeat(3, 1fr); }
+  .projects img {
+    width: 100%;
+    border: 3px #fff solid; }
+    .projects img:hover {
+      opacity: 0.5;
+      border-color: #5cd6d6;
+      transition: all 0.2s ease-out; }
 
-.pimg3 {
-  background-image: url("../img/bgimage3.jpg");
-  min-height: 400px; }
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 1rem; }
+  .boxes div {
+    font-size: 2rem;
+    border: 3px #fff solid;
+    padding: 1.5rem 2.5rem;
+    margin-bottom: 3rem;
+    transition: all 0.2s ease-out; }
+    .boxes div:hover {
+      padding: 0.5rem 1.5rem;
+      background: #5cd6d6;
+      color: #000; }
+      .boxes div:hover span {
+        color: #000; }
 
-.section {
+.btn, .btn-dark, .btn-light {
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem; }
+  .btn:hover, .btn-dark:hover, .btn-light:hover {
+    background: #5cd6d6;
+    color: #000; }
+
+.btn-dark {
+  background: #36434b;
+  color: #fff; }
+
+.btn-light {
+  background: white;
+  color: #333; }
+
+#main-footer {
   text-align: center;
-  padding: 30px 80px; }
-  .section p {
-    font-size: 20px; }
-
-.section-light {
-  background-color: #f4f4f4;
-  color: #666; }
-
-.section-dark {
-  background-color: #282e34;
-  color: #ddd; }
-
-@media (max-width: 568px) {
-  .pimg1,
-  .pimg2,
-  .pimg3 {
-    background-attachment: scroll; } }
+  padding: 1rem;
+  background: #98a9b5;
+  color: #000;
+  height: 60px; }
 
 @media screen and (min-width: 1171px) {
   .projects {

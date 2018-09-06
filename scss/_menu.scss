@@ -44,7 +44,6 @@
   position: fixed;
   top: 0;
   width: 100%;
-  opacity: 0.99;
   visibility: hidden;
 
   &.show {
@@ -67,7 +66,6 @@
     margin: 0;
     padding: 0;
     background: #fff;
-    opacity: 0.7;
     list-style: none;
     transform: translate3d(0, -100%, 0);
     @include easeOut();
@@ -125,6 +123,14 @@
       color: $secondary-color;
     }
   }
+}
+
+#main-footer {
+  text-align: center;
+  padding: 1rem;
+  background: darken(#b6c2ca, 10);
+  color: set-text-color(#b6c2ca);
+  height: 60px;
 }
 
 // Delay each nav item slide by 0.1s
