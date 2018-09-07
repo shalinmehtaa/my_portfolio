@@ -57,7 +57,7 @@ header {
 }
 
 .text-secondary {
-  color: $secondary-color;
+  color: #fff;
 }
 
 main {
@@ -136,16 +136,8 @@ main {
 }
 
 .section-dark {
-  background-color: #282e34;
-  color: #ddd;
-}
-
-@media (max-width: 568px) {
-  .pimg1,
-  .pimg2,
-  .pimg3 {
-    background-attachment: scroll;
-  }
+  background-color: #486470;
+  color: #fff;
 }
 
 @import "mobile";

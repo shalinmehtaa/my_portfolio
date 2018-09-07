@@ -21,7 +21,11 @@
     .lg-heading {
       line-height: 1;
       background: none;
-      color: #000;
+    }
+
+    .small-screens {
+      background: rgba(lighten($color: #486470, $amount: 0.1), 0.7);
+      width: 70vw;
     }
 
     .sm-heading {

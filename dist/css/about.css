@@ -38,11 +38,13 @@
   .menu-btn.close {
     transform: rotate(180deg); }
     .menu-btn.close .btn-line:first-child {
-      transform: rotate(45deg) translate(5px, 5px); }
+      transform: rotate(45deg) translate(5px, 5px);
+      background: #000; }
     .menu-btn.close .btn-line:nth-child(2) {
       opacity: 0; }
     .menu-btn.close .btn-line:nth-child(3) {
-      transform: rotate(-45deg) translate(7px, -6px); }
+      transform: rotate(-45deg) translate(7px, -6px);
+      background: #000; }
 
 .menu {
   position: fixed;
@@ -82,7 +84,7 @@
       background: url(../img/portrait.png);
       background-position: center;
       border-radius: 50%;
-      border: solid 3px #fff;
+      border: solid 3px #5fb3b6;
       z-index: 5;
       opacity: 1; }
   .menu .nav-item {
@@ -205,7 +207,7 @@ main {
   margin-top: 1rem; }
   .boxes div {
     font-size: 1rem;
-    border: 3px #fff solid;
+    border: 3px #5fb3b6 solid;
     padding: 1.5rem 2.5rem;
     margin-bottom: 3rem;
     margin-top: 5rem;
@@ -254,8 +256,10 @@ main {
     text-align: center; }
     main .lg-heading {
       line-height: 1;
-      background: none;
-      color: #000; }
+      background: none; }
+    main .small-screens {
+      background: rgba(72, 100, 112, 0.7);
+      width: 70vw; }
     main .sm-heading {
       display: none; }
   ul.menu-nav,
