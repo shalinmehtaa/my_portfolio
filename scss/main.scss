@@ -6,7 +6,7 @@
 }
 
 body {
-  @include background();
+  // @include background();
   background: $primary-color;
   color: set-text-color($primary-color);
   height: 100%;
@@ -96,6 +96,7 @@ main {
   }
 }
 
+.pimg1,
 .pimg2,
 .pimg3 {
   position: relative;
@@ -103,6 +104,11 @@ main {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+}
+
+.pimg1 {
+  background-image: url("../img/bgimage1.jpeg");
+  min-height: 100%;
 }
 
 .pimg2 {

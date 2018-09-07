@@ -8,7 +8,7 @@ $background-opacity: 0.7;
   transition: all 0.2s ease-out;
 }
 
-@mixin background {
+/* @mixin background {
   @if show-home-image {
     &#bg-image {
       background: $home-image;
@@ -17,8 +17,9 @@ $background-opacity: 0.7;
       background-position: center;
       height: 100%;
       background-repeat: no-repeat;
+      position: relative;
 
-      /* &:after {
+        &:after {
         content: "";
         position: absolute;
         top: 0;
@@ -27,10 +28,10 @@ $background-opacity: 0.7;
         height: 100%;
         background: rgba($primary-color, $background-opacity);
         z-index: -1;
-      } this enables and overlay over the image */
+      } //this enables and overlay over the image
     }
   }
-}
+} */
 
 // Set Text Color
 @function set-text-color($color) {
