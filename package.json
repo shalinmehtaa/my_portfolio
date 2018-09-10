@@ -13,5 +13,13 @@
   "dependencies": {
     "gh-pages": "^1.2.0",
     "node-sass": "^4.9.3"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shalinmehtaa/my_portfolio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/shalinmehtaa/my_portfolio/issues"
   }
 }
